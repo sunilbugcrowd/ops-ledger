@@ -1,0 +1,3 @@
+name: approval-test2
+on: push
+jobs: {}
