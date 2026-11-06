@@ -1,0 +1,11 @@
+name: poc-unconfirmed
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "executed ${{ github.sha }}" > proof.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: proof
+          path: proof.txt
